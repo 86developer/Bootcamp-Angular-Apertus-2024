@@ -1,7 +1,7 @@
 const nameInput = document.getElementById("name");
 const priceInput = document.getElementById("price");
 const addProduct = document.getElementById("addProduct");
-const btnAdd = document.getElementById("btnAddd");
+const btnAdd = document.getElementById("btnAdd");
 
 //Array donde se guardan los productos  ingresados
 const productos = [];
