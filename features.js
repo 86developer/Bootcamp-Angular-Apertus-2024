@@ -31,23 +31,40 @@ btnAdd.addEventListener("click",
     //Limpiar los campos de entrada 
     nameInput.value = "";
     priceInput.value = "";
+
+    //Llamar para mostrar el nuevo producto
+    mostrarProducto(newProduct);
   });
+
 //Funcion para mostrar el nuevo producto en un <li>
 function mostrarProducto(producto) {
   const lista = document.getElementById("productAdd");
   const nuevoItem = document.createElement("li");
-  nuevoItem.textContent = `Producto: ${producto.nombre}, Precio: $${producto.precio}`;
+  nuevoItem.textContent = `Producto: ${producto.name}, Precio: $${producto.price}`;
 
   lista.appendChild(nuevoItem);// Insertar el li en el ul
 
   //Eliminar el producto: Cada producto en la lista debe tener un boton para eliminarlo
   const botonEliminar = document.createElement("button");
   botonEliminar.textContent = "Eliminar";
-  botonEliminar.addEventListener("click", function() {
+  botonEliminar.addEventListener("click", function () {
     nuevoItem.remove();
   });
   nuevoItem.appendChild(botonEliminar);
-  
 }
 
 //Editar producto: Cada producto en la lista tendrá un botón "Editar". Al hacer clic, los datos del producto se cargarán en el formulario para ser modificados. Luego de editar, el usuario podrá guardar los cambios.
+
+const botonEditar = document.createElement("button");
+botonEditar.textContent = "Editar";
+botonEditar.addEventListener("click", function () {
+  nameInput.value = producto.name;
+  priceInput.value = producto.price;
+  productoAEDitar - producto;
+
+  //Cambiar el texto del boton a "Guardar Cambios"
+  btnAdd.textContent = "Guardar Cambios";
+});
+
+nuevoItem.appendChild(botonEliminar);
+nuevoItem.appendChild(botonEditar);
