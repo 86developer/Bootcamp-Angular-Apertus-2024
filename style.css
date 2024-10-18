@@ -1,0 +1,11 @@
+:root {
+    background-color: grey;
+}
+
+
+body {
+    font-family: system-ui;
+    background: gray;
+    color: white;
+    text-align: center;
+}
