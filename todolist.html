@@ -5,27 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDoList</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <form action="" id="form">
         <label for="">Nombre del producto</label>
+        <br>
         <input type="text" id="name" placeholder="Ingrese nombre del producto">
+        <br>
+        <br>
         <label for="">Precio</label>
+        <br>
         <input type="number" id="price" placeholder="Ingrese precio">
-
+        <br>
+        <br>
         <select name="" id="select">
             <option value="" id="electronica ">Electrónica</option>
             <option value="" id="clothes">Ropa</option>
             <option value="" id="home">Hogar</option>
         </select>
+        <br>
+        <br>
         <button type="btn" id="btnAdd">Agregar Productos</button>
-        <ol>
-            <li id="productAdd">Productos Agregados</li>
-        </ol>
+        <h2>Productos Agregados</h2>
+        <ul id="productAdd">
+        </ul>
         <button type="btn" id="btnEdit">Editar Productos</button>
         <button type="btn" id="btnDelete">Eliminar Productos</button>
-
+        <script src="./features.js"></script>
     </form>
 </body>
 
