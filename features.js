@@ -60,11 +60,11 @@ botonEditar.textContent = "Editar";
 botonEditar.addEventListener("click", function () {
   nameInput.value = producto.name;
   priceInput.value = producto.price;
-  productoAEDitar - producto;
+  productoAEditar = producto;
 
   //Cambiar el texto del boton a "Guardar Cambios"
   btnAdd.textContent = "Guardar Cambios";
 });
 
-nuevoItem.appendChild(botonEliminar);
 nuevoItem.appendChild(botonEditar);
+nuevoItem.appendChild(botonEliminar);
